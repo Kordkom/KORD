@@ -1,0 +1,187 @@
+/* ========== GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* DARK THEME */
+  --primary: #000000;
+  --highlight: #000000;
+  --background: #7B3F00;
+  --foreground: #f1f1f1;
+  --card-bg: #5C3B00;
+
+  /* LIGHT THEME */
+  --light-background: #FFF8E1;      /* Creamy white */
+  --light-foreground: #111111;      /* Almost black text */
+  --light-card-bg: #FCEBD5;         /* Warm beige */
+  --light-highlight: #7B3F00;       /* Chocolate highlight */
+  --light-primary: #000000;
+}
+
+[data-theme="light"] {
+  --background: var(--light-background);
+  --foreground: var(--light-foreground);
+  --card-bg: var(--light-card-bg);
+  --highlight: var(--light-highlight);
+  --primary: var(--light-primary);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Courier New', Tahoma, sans-serif;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+.typewriter {
+  font-size: 2.2rem;
+  color: var(--highlight);
+  font-weight: bold;
+  animation: typing 2s steps(20) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--highlight);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+  border: 3px solid var(--primary);
+}
+
+/* ========== CARD ========== */
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== SKILLS ========== */
+.skill label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.meter {
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 18px;
+}
+
+.fill {
+  background: var(--primary);
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+/* ========== PROJECTS ========== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px var(--highlight);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+  color: var(--foreground);
+}
+
+.socials {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  
+}
+
+/* ========== THEME TOGGLE ========== */
+#themeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--primary);
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

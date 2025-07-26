@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en" id="root" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korede David Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="themeToggle" title="Toggle Theme">🌓</button>  <div class="container">
+    <header>
+      <h1 class="typewriter">KORD INDUSTRIES </h1>
+      <p>Developers  | AI Integration</p>
+      <img src="IMG_20250725_192359.jpg" alt="Profile" class="profile-pic" />
+    </header><section class="card">
+  <h2>About💡</h2>
+  <p>
+    I am driven by a passion for progress and a commitment to using technology, to make businesses more efficient,competitive, and future-ready. By using intelligent maketing tools to automated trading systems,our mission is to reshape industries through smart, scalable, and innovative technologies.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Skills</h2>
+  <div class="skill">
+    <label>HTML</label>
+    <div class="meter"><div class="fill" style="width: 90%;"></div></div>
+  </div>
+  <div class="skill">
+    <label>CSS</label>
+    <div class="meter"><div class="fill" style="width: 85%;"></div></div>
+  </div>
+    <div class="skill">
+    <label>PYTHON</label>
+    <div class="meter"><div class="fill" style="width: 85%;"></div></div>
+  </div>
+    <div class="skill">
+    <label>C++</label>
+    <div class="meter"><div class="fill" style="width: 85%;"></div></div>
+  </div>
+  <div class="skill">
+    <label>JavaScript</label>
+    <div class="meter"><div class="fill" style="width: 75%;"></div></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>WHERE WE STARTED 🚩</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Active Learning</h3>
+      <p>At Kord Industries, our journey began with a deep commitment to mastering the core tools,of modern technology.Over the years, we have extensively studied and practiced key programming languages such as Python, JavaScript, Java, and C++. Through hands-on projects, research, and real-world applications,we have gained valuable experience and technical expertise.This strong foundation has enabled us  to design intelligent systems that are not only functional but forward-thinking,setting the stage for the innovative  AI solutions we deliver today.</p>
+    </div>
+  </div>
+</section>
+<section class="card">
+  <h2>WHERE WE ARE NOW 📍</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Testing and Integration</h3>
+      <p>Today, Kord Industries is actively focused on developing and testing advanced AI systems tailored to real-world challenges. Our team is working  on intelligent solutions for sectors  like marketing, finance, and business automation. We are constantly experimenting, improving, and refining our models to ensure they deliver smart, efficient, and reliable results. Innovation is at the heart of everything we do, and our present is defined by exploration,  problem-solving, and progress.</p>
+    </div>
+  </div>
+</section>
+<section class="card">
+  <h2>FUTURE AIMS 🎯</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Providing AI Solutions</h3>
+      <p>We are looking forward to  a future where Kord Industries,  becomes a driving force in providing intelligent, real-world AI solutions. Our vision is to take the technologies  we are developing today and fully  implement them across industries to solve  complex problems in marketing, finance, automation, and beyond. With a commitment to excellence, innovation,  and long-term impact,  we aim to build scalable systems that empower businesses  and shape a smarter economic future.</p>
+      
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Korede David. All rights reserved.</p>
+  <div class="socials">
+    <img src="IMG_20250726_152649.jpg"style="border-radius: 24%;" >
+    <a href="mailto:korededavid44@gmail.com" title="Email" style="color:red;">
+      korededavid44@gmail.com
+    </a>
+   
+  </div>
+</footer>
+
+  </div>  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
+
+    toggleBtn.addEventListener('click', () => {
+      const current = htmlElement.getAttribute('data-theme');
+      htmlElement.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
+    });
+  </script>
+  </body>
+</html>
